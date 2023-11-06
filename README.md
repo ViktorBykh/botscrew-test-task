@@ -2,19 +2,19 @@
 
 This is a simple Spring Boot Java project with a console interface for managing a university. The application handles departments, lectors, and provides various commands to retrieve information from the relational database.
 
-## Commands
+## Commands:
 - You can see greeting message for user with `Start` command:
   - **User Input:** `Start`
   - **Answer:** `Welcome to the University Console Interface! Enter a command (type 'exit' to quit)`
-- You can see all `commands`: descriptions with `help` command.
+- You can see all `<commands>: descriptions` with `help` command.
    - **User Input:** `help`
    - **Answer:** `<...>`
-     <br>`Show statistics for`: Department statistics
-     <br>`Start`: Start the console interface
-     <br>`Show the average salary for the department`: The average salary for the department
-     <br>`Who is head of department`: Find the head of a department
-     <br>`Show count of employee for`: Employee count for a department
-     <br>`Global search by`: Global search by template
+     <br>`<Show statistics for>: Department statistics`
+     <br>`<Start>: Start the console interface`
+     <br>`<Show the average salary for the department>: The average salary for the department`
+     <br>`<Who is head of department>: Find the head of a department`
+     <br>`<Show count of employee for>: Employee count for a department`
+     <br>`<Global search by>: Global search by template`
 
 1. **Who is head of department {department_name}**
     - **User Input:** `Who is head of department {department_name}`
