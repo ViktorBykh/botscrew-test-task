@@ -49,7 +49,8 @@ public class LectorServiceImpl implements LectorService {
     @Override
     public double getAverageSalaryForDepartment(String departmentName) {
         Department department = departmentRepository.findDepartmentByName(departmentName);
-        if (department != null && !department.getLectors().isEmpty()) {
+        if (department != null && department.getLectors() != null
+                && !department.getLectors().isEmpty()) {
             double totalSalary = department.getLectors().stream()
                     .map(Lector::getSalary)
                     .mapToDouble(BigDecimal::doubleValue)
@@ -62,7 +63,8 @@ public class LectorServiceImpl implements LectorService {
     @Override
     public int getCountOfEmployeesForDepartment(String departmentName) {
         Department department = departmentRepository.findDepartmentByName(departmentName);
-        return department != null ? department.getLectors().size() : 0;
+        return department != null && department.getLectors() != null
+                ? department.getLectors().size() : 0;
     }
 
     @Override
