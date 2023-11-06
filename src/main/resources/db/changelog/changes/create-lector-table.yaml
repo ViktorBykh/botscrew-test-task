@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-lectors-table
+      author: root
+      changes:
+        - createTable:
+            tableName: lectors
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+              - column:
+                  name: last_name
+                  type: VARCHAR(255)
+              - column:
+                  name: salary
+                  type: DECIMAL
+              - column:
+                  name: degree
+                  type: VARCHAR(255)
