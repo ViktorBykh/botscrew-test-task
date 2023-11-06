@@ -21,7 +21,7 @@ This is a simple Spring Boot Java project with a console interface for managing 
     - **Answer:** `Head of {department_name} department is {head_of_department_name}`
 
 2. **Show statistics for {department_name}**
-    - **User Input:** `Show {department_name} statistics`
+    - **User Input:** `Show statistics for {department_name}`
     - **Answer:** `{department_name} department statistics:`
         - `assistants - {assistants_count}`
         - `associate professors - {associate_professors_count}`
