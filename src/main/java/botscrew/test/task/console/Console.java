@@ -15,7 +15,7 @@ public class Console {
     private final DepartmentService departmentService;
     private final LectorService lectorService;
 
-    @ShellMethod("Start the console interface")
+    @ShellMethod(value = "Start the console interface", key = "Start")
     public void start() {
         System.out.println("Welcome to the University Console Interface! "
                 + "Enter a command (type 'exit' to quit): ");
